@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Encripta y desencripta tu texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header>
+        <img src="./assets/Logo.png" alt="Logo de Alura">
+    </header>
+    <main class="presentacion">  
+       
+        <section class="presentacion__contenido">
+            <div>
+                <h1 class="presentacion__contenido__texto">Encriptador de texto</h1>
+            </div> 
+            <textarea id="input-text" placeholder="Ingrese el texto aquí..."></textarea>
+            <a class="presentacion__contenido__texto3">
+                <img class="imagen__alerta" src="./assets/images.png">Solo letras minúsculas y sin acentos</a>
+
+
+        <div class="container">
+            <div class="chute container__botones">
+                <button onclick="encriptar()" class="container__boton1">Encriptar</button>
+                <button onclick="desencriptar()" class="container__boton2">Desencriptar</button>
+            </div>    
+        </div>
+        </section>  
+         
+        <div class="right-content">
+            <textarea id="output-text" placeholder="Ningún mensaje fue encontrado.                     Ingresa el texto que desees encriptar o desencriptar"readonly></textarea>
+                <img id="muneco" src="./assets/Muñeco.png" alt="Muñeco con lupa buscando algo">
+    
+            <div class="boton">
+                <button onclick="copiar()"class="container__boton3">Copiar</button>
+            </div>
+
+        </div>  
+    </main>
+    
+    <footer class="footer">
+        <p>Desarrollado por María de los Angeles Alvarez</p>
+    </footer>
+    
+    <script src="app.js"></script>  
+</body>  
+</html>
